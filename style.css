@@ -36,10 +36,6 @@
     color: #007bff;
 }
 
-html body {
-    padding-top: 85px;
-}
-
 .footer {
     display: flex;
     background-color: #303036;
@@ -66,31 +62,9 @@ html body {
     text-align: left;
 }
 
-.address::before {
-    font-family: "Material Icons";
-    content: "place";
-    margin-right: 10px;
-}
 
-.phone::before {
-    font-family: "Material Icons";
-    content: "smartphone";
-    margin-right: 10px;
-}
-
-.email::before {
-    font-family: "Material Icons";
-    content: "email";
-    margin-right: 10px;
-}
-
-.itemSectionContact1 .address::before, .itemSectionContact1 .phone::before, .itemSectionContact1 .email::before {
+.item .address::before, .itemSectionContact1 .phone::before, .itemSectionContact1 .email::before {
     color: #2c7ae7;
-}
-
-.noListStyle {
-    list-style: none;
-    padding-left: 0;
 }
 
 .headerForFooter {
@@ -102,29 +76,9 @@ html body {
     text-decoration: none;
 }
 
-.sectionContainer {
-    padding-top: 70px;
-}
-
-.sectionItem {
-    display: flex;
-    padding-bottom: 50px;
-}
-
-.itemSectionServices {
-    flex-basis: 250px;
-    flex-grow: 1;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding: 30px;
-    color: #000;
-    text-align: center;
-}
 
 .itemSectionServices:hover {
-    text-decoration: none;
     background-color: #2876e2;
-    color: #fff;
 }
 
 .itemSectionContact1 {
@@ -151,42 +105,9 @@ html body {
     padding-top: 30px;
 }
 
-.sectionTitle {
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-.subTitle {
-    color: #2876e2;
-}
-
 .centerButtonContainer {
     width: 100%;
     text-align: center;
-}
-
-.seeAllButton {
-    display: inline-block;
-}
-
-.buttonStyle {
-    margin-bottom: 50px;
-    padding: 15px 70px;
-    text-decoration: none;
-    background-image: linear-gradient(to right, #2876e2 0, #3f8efc 100%);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-.buttonStyle:focus {
-    outline: none;
-}
-
-.buttonStyle:hover {
-    background-image: linear-gradient(to right, #3f8efc 0, #2876e2 100%);
-    text-decoration: none;
-    color: #fff;
 }
 
 .bgColor1 {
@@ -201,9 +122,6 @@ html body {
     padding: 0px 30px;
     color: #000;
     text-align: left;
-}
-
-.itemSectionChooseUs {
     display: flex;
 }
 
@@ -271,7 +189,6 @@ html body {
 }
 
 .articleContainer ul {
-    list-style: none;
     padding-left: 0;
 }
 
@@ -313,11 +230,8 @@ html body {
     .cellType2 {
         display: none;
     }
-    .sectionItem {
-        flex-direction: column;
-        align-items: center;
-    }
-    .itemSectionServices, .itemSectionChooseUs {
+    
+    .itemSectionChooseUs {
         flex-basis: auto;
         flex-grow: 1;
         margin-top: 20px;

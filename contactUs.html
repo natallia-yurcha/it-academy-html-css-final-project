@@ -15,8 +15,11 @@
 
     <!-- Подключаем файлы CSS -->
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="сcs/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/components.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/pages/contactUs_page.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -30,47 +33,44 @@
 <!--/breadcrumb-->
 
 <body>
-    <div class="sectionContainer">
 
-        <div class="sectionTitle">
-            <div class="subTitle">WE ARE ALWAYS IN TOUCH</div>
-            <h1>Contact Us</h1>
-        </div>
-
-        <!--sectionItem 1-->
-        <div class="sectionItem">
-            <div class="itemSectionContact1 borderWithRadius bgColor1">
-                <h3>Get in Touch</h3>
-                <ul class="noListStyle">
-                    <li class="address">301 S Irving Blvd Los Angeles, CA 90020</li>
-                    <li class="phone">+1 323-913-4688, +1 323-888-4554</li>
-                    <li class="email">mail@example.com</li>
-                </ul>
-            </div>
-
-            <div class="itemSectionContact2">
-                <h3>Contact Form</h3>
-                <form method=post action='#!'>
-                    <div style="display: flex;">
-                        <input class="inputStyle1 borderStyle borderWithRadius" type='text' name='yourName'
-                            placeholder='Your Name'>
-                        <div class="emptyCell2"></div>
-                        <input class="inputStyle1 borderStyle borderWithRadius" type='text' name='yourPhone'
-                            placeholder='Your Phone'>
-                        <div class="emptyCell2"></div>
-                        <input class=" inputStyle1 borderStyle borderWithRadius" type='text' name='yourEmail'
-                            placeholder='Your Email'></br>
-                    </div>
-                    <input class="inputStyle2 borderStyle borderWithRadius" type='text' name='yourMassage'
-                        placeholder='Your Message'></br>
-                    <button class="buttonStyle" type='submit'>Send Message</button>
-                </form>
-            </div>
-        </div>
-        <!--/.sectionItem 1-->
-
+    <div class="title title-style">
+        <div class="subtitle-style">WE ARE ALWAYS IN TOUCH</div>
+        <h2>Contact Us</h2>
     </div>
-    <!--/.sectionContainer-->
+
+    <!--itemBlok-->
+    <div class="itemBlok itemBlok-style">
+        <div class="item borderWithRadius bgColor1">
+            <h3>Get in Touch</h3>
+            <ul>
+                <li class="address address-style">301 S Irving Blvd Los Angeles, CA 90020</li>
+                <li class="phone phone-style">+1 323-913-4688, +1 323-888-4554</li>
+                <li class="email email-style">mail@example.com</li>
+            </ul>
+        </div>
+
+        <div class="itemSectionContact2">
+            <h3>Contact Form</h3>
+            <form method=post action='#!'>
+                <div style="display: flex;">
+                    <input class="inputStyle1 borderStyle borderWithRadius" type='text' name='yourName'
+                        placeholder='Your Name'>
+                    <div class="emptyCell2"></div>
+                    <input class="inputStyle1 borderStyle borderWithRadius" type='text' name='yourPhone'
+                        placeholder='Your Phone'>
+                    <div class="emptyCell2"></div>
+                    <input class=" inputStyle1 borderStyle borderWithRadius" type='text' name='yourEmail'
+                        placeholder='Your Email'></br>
+                </div>
+                <input class="inputStyle2 borderStyle borderWithRadius" type='text' name='yourMassage'
+                    placeholder='Your Message'></br>
+                <button class="btn" type='submit'>Send Message</button>
+            </form>
+        </div>
+    </div>
+    <!--/.itemBlok-->
+
 
     <!-- Подключаем jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

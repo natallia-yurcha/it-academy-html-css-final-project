@@ -1,0 +1,14 @@
+.btn {
+    padding: 15px 70px;
+    background-image: linear-gradient(to right, #2876e2 0, #3f8efc 100%);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, #3f8efc 0, #2876e2 100%);
+}
