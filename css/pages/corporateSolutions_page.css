@@ -1,0 +1,26 @@
+.articleContainer {
+    width: 80%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.articleContainer img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid #d4d4e1;
+    border-radius: 10px;
+}
+
+.articleContainer ul li {
+    margin-bottom: 15px;
+}
+
+.articleContainer ul li::before {
+    content: "\2714";
+    color: #2c7ae7;
+    margin-right: 15px;
+}

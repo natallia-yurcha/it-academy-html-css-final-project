@@ -24,66 +24,64 @@ a:hover {
     text-decoration: none;
 }
 
+.breadcrumb {
+    background-color: #f0f4f8;
+}
+
+.breadcrumb-item a {
+    color: #6c757d;
+}
+
+.breadcrumb .active {
+    color: #007bff;
+}
+
+.breadcrumb .active::before {
+    color: #007bff;
+}
+
 .address::before {
+    font-family: "Material Icons";
+    content: "place";
     margin-right: 10px;
 }
 
 .phone::before {
+    font-family: "Material Icons";
+    content: "smartphone";
     margin-right: 10px;
 }
 
 .email::before {
+    font-family: "Material Icons";
+    content: "email";
     margin-right: 10px;
 }
 
-.address-style::before {
-    font-family: "Material Icons";
-    content: "place";
-}
-
-.phone-style::before {
-    font-family: "Material Icons";
-    content: "smartphone";
-}
-
-.email-style::before {
-    font-family: "Material Icons";
-    content: "email";
-}
-
-.subtitle-style {
+.subtitle {
     color: #2876e2;
     font-size: 1rem;
 }
 
-.title {
+.titleContainer {
     margin-bottom: 70px;
     padding-top: 70px;
-}
-.title-style {
     text-align: center;
 }
 
-.itemBlok-style {
+.itemBlok {
     display: flex;
-}
-
-.itemBlok-style {
     padding-bottom: 50px;
 }
-
-.item  {
-    flex-basis: 250px;
-    flex-grow: 1;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding: 30px;
-    
+.sectionChooseUs {
+    background-color: #f0f4f8;
 }
-.item-style {
-    color: #000;
+
+.centerButtonContainer {
+    width: 100%;
     text-align: center;
 }
+
 
 @media only screen and (max-width: 768px) {
     h1, h2 {

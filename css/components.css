@@ -12,3 +12,18 @@
 .btn:hover {
     background-image: linear-gradient(to right, #3f8efc 0, #2876e2 100%);
 }
+
+.inpt {
+    height: 50px;
+    flex-grow: 1;
+    flex-basis: 50px;
+    border-radius: 5px;
+    border: 1px solid #d4d4e1;
+}
+
+.txtarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #d4d4e1;
+}

@@ -20,22 +20,6 @@
     background-color: #fff;
 }
 
-.breadcrumb {
-    background-color: #f0f4f8;
-}
-
-.breadcrumb-item a {
-    color: #6c757d;
-}
-
-.breadcrumb .active {
-    color: #007bff;
-}
-
-.breadcrumb .active::before {
-    color: #007bff;
-}
-
 .footer {
     display: flex;
     background-color: #303036;
@@ -43,14 +27,7 @@
     height: 500px;
 }
 
-.emptyCell1 {
-    flex-basis: 50px;
-    flex-grow: 1;
-}
 
-.emptyCell2 {
-    flex-basis: 20px;
-}
 
 .cellType1 {
     flex-basis: 250px;
@@ -63,10 +40,6 @@
 }
 
 
-.item .address::before, .itemSectionContact1 .phone::before, .itemSectionContact1 .email::before {
-    color: #2c7ae7;
-}
-
 .headerForFooter {
     text-align: left;
 }
@@ -77,153 +50,11 @@
 }
 
 
-.itemSectionServices:hover {
-    background-color: #2876e2;
-}
-
-.itemSectionContact1 {
-    flex-basis: 100px;
-    flex-grow: 1;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding: 30px;
-    color: #000;
-    text-align: left;
-}
-
-.itemSectionContact2 {
-    flex-basis: 300px;
-    flex-grow: 2;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding: 0px 30px 30px 30px;
-    color: #000;
-    text-align: justify;
-}
-
-.itemSectionContact1 li {
-    padding-top: 30px;
-}
-
-.centerButtonContainer {
-    width: 100%;
-    text-align: center;
-}
-
-.bgColor1 {
-    background-color: #f0f4f8;
-}
-
-.itemSectionChooseUs {
-    flex-basis: 250px;
-    flex-grow: 1;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding: 0px 30px;
-    color: #000;
-    text-align: left;
-    display: flex;
-}
-
-.itemNumber {
-    font-weight: bold;
-    color: #2876e2;
-    flex-basis: 50px;
-}
-
-.itemMdash {
-    flex-basis: 50px;
-}
-
-.teamPerson {
-    position: relative;
-    background-repeat: no-repeat;
-    width: 255px;
-    height: 330px;
-}
-
-.teamPerson1 {
-    background-image: url('images/team-img-1.jpg');
-}
-
-.teamPerson2 {
-    background-image: url('images/team-img-2.jpg');
-}
-
-.teamPerson3 {
-    background-image: url('images/team-img-3.jpg');
-}
-
-.teamPerson4 {
-    background-image: url('images/team-img-4.jpg');
-}
-
-.teamPersonInfo {
-    position: absolute;
-    bottom: 0;
-    width: 255px;
-    text-align: center;
-}
-
-.borderWithRadius {
-    border-radius: 10px;
-}
-
-.borderStyle {
-    border: 1px solid #d4d4e1;
-}
-
-.articleContainer {
-    width: 80%;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    margin-bottom: 30px;
-}
-
-.articleImage {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-
-.articleContainer ul {
-    padding-left: 0;
-}
-
-.articleContainer ul li {
-    margin-bottom: 15px;
-}
-
-.articleContainer ul li::before {
-    content: "\2714";
-    color: #2c7ae7;
-    margin-right: 15px;
-}
-
-.articleContainer h5 {
-    margin-bottom: 30px;
-}
-
-.inputStyle1 {
-    height: 50px;
-    flex-grow: 1;
-    flex-basis: 50px;
-}
-
-.inputStyle2 {
-    width: 100%;
-    height: 200px;
-}
-
 @media only screen and (max-width: 768px) {
     .footer {
         flex-direction: column;
     }
-    .emptyCell1 {
-        display: none;
-    }
+    
     .cellType1 {
         flex-basis: auto;
     }
@@ -231,9 +62,4 @@
         display: none;
     }
     
-    .itemSectionChooseUs {
-        flex-basis: auto;
-        flex-grow: 1;
-        margin-top: 20px;
-    }
 }
