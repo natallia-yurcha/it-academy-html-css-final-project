@@ -14,10 +14,8 @@
         width: 100%;
         height: 100%;
         z-index: 1;
-    }
-
-    .carousel:nth-of-type(1) {
-        right: 280px;
+        background-size: cover;
+        background-position: center;
     }
 
     .demonstration {
@@ -25,13 +23,8 @@
         z-index: 2;
     }
 
-    .carousel:nth-of-type(1) {
-        left: -280px;
-    }
-
     .item-sectionService {
         flex-basis: 250px;
-        flex-grow: 1;
         margin-right: 30px;
         margin-left: 30px;
         padding: 30px;
@@ -45,12 +38,15 @@
         background-color: #2876e2;
     }
 
+    .sectionChooseUs {
+        background-color: #f0f4f8;
+    }
+
     .item-sectionChooseUs {
         flex-basis: 250px;
-        flex-grow: 1;
         margin-right: 30px;
         margin-left: 30px;
-        padding: 0px 30px;
+        padding: 30px;
         color: #000;
         text-align: left;
         display: flex;
@@ -59,11 +55,6 @@
     .item-sectionChooseUs div:nth-child(1) {
         font-weight: bold;
         color: #2876e2;
-        flex-basis: 50px;
-    }
-
-    .item-sectionChooseUs div:nth-child(2) {
-        flex-basis: 50px;
     }
 
     .item-sectionTeam {
@@ -79,6 +70,11 @@
         display: block;
         max-width: 100%;
         height: auto;
+        padding: 0;
+    }
+
+    .item-subBlok {
+        display: inline-flex;
     }
 
     .emptyCell {
@@ -86,13 +82,32 @@
         flex-grow: 1;
     }
 
+    @media only screen and (max-width: 990px) {
+        .itemBlok {
+            flex-direction: column;
+        }
+    }
+
     @media only screen and (max-width: 768px) {
+        .item-sectionService {
+            flex-basis: auto;
+            margin-bottom: 20px;
+        }
         .item-sectionChooseUs {
             flex-basis: auto;
-            flex-grow: 1;
-            margin-top: 20px;
+            margin: 0px;
+            width: 80%;
         }
         .emptyCell {
             display: none;
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        .itemBlok {
+            flex-direction: column;
+        }
+        .item-subBlok {
+            flex-direction: column;
         }
     }
