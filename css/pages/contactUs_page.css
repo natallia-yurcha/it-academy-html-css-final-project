@@ -1,20 +1,16 @@
-
-
 .item-form {
-    flex-basis: 300px;
-    flex-grow: 2;
-    margin-right: 30px;
-    margin-left: 30px;
+    flex-basis: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
     padding: 0px 30px 30px 30px;
     color: #000;
     text-align: justify;
 }
 
 .item-contacts {
-    flex-basis: 100px;
-    flex-grow: 1;
-    margin-right: 30px;
-    margin-left: 30px;
+    flex-basis: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
     padding: 30px;
     color: #000;
     text-align: left;
@@ -25,14 +21,54 @@
 .formInputContainer {
     display: flex;
 }
+
+.formInputSubcontainer {
+    display: flex;
+}
+
 .address::before, .phone::before, .email::before {
     color: #2c7ae7;
 }
 
 .item-contacts li {
-    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.emptyCell {
-    flex-basis: 20px;
+.btn {
+    margin: 30px 0 30px 5px;
+}
+
+.inpt {
+    margin: 0 5px 10px 5px;
+}
+
+.txtarea {
+    width: calc(100% - 10px);
+}
+
+.txtareaContainer {
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .formInputContainer {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .formInputSubcontainer {
+        flex-direction: column;
+    }
+    .item-form {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
+    .item-contacts {
+        margin: 0;
+        padding: 30px;
+        width: 80%;
+    }
 }

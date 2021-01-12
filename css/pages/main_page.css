@@ -23,6 +23,10 @@
         z-index: 2;
     }
 
+    .btn {
+        margin-bottom: 50px;
+    }
+
     .item-sectionService {
         flex-basis: 250px;
         margin-right: 30px;

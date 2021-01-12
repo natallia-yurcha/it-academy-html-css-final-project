@@ -54,13 +54,15 @@
             <h3>Contact Form</h3>
             <form method=post action='#!'>
                 <div class="formInputContainer">
-                    <input class="inpt" type='text' name='yourName' placeholder='Your Name'>
-                    <div class="emptyCell"></div>
-                    <input class="inpt" type='text' name='yourPhone' placeholder='Your Phone'>
-                    <div class="emptyCell"></div>
-                    <input class="inpt" type='text' name='yourEmail' placeholder='Your Email'></br>
+                    <div class="formInputSubcontainer">
+                        <input class="inpt" type='text' name='yourName' placeholder='Your Name'>
+                        <input class="inpt" type='text' name='yourPhone' placeholder='Your Phone'>
+                    </div>
+                    <div class="formInputSubcontainer">
+                        <input class="inpt" type='text' name='yourEmail' placeholder='Your Email'></br>
+                    </div>
                 </div>
-                <input class="txtarea" type='text' name='yourMassage' placeholder='Your Message'></br>
+                <div class="txtareaContainer"><input class="txtarea" type='text' name='yourMassage' placeholder='Your Message'></div>
                 <button class="btn" type='submit'>Send Message</button>
             </form>
         </div>

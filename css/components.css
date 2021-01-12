@@ -3,6 +3,7 @@
     background-image: linear-gradient(to right, #2876e2 0, #3f8efc 100%);
     border: none;
     border-radius: 5px;
+    color: #fff;
 }
 
 .btn:focus {
