@@ -20,11 +20,22 @@
     flex-basis: 50px;
     border-radius: 5px;
     border: 1px solid #d4d4e1;
+    padding-left: 15px;
+}
+.inpt::placeholder {
+    color: #d4d4e1;
+}
+.inpt:focus, .txtarea:focus {
+    outline: none;
+    border: 1px solid #2876e2;
 }
 
 .txtarea {
-    width: 100%;
-    height: 200px;
     border-radius: 5px;
     border: 1px solid #d4d4e1;
+    padding: 15px; 
 }
+.txtarea::placeholder {
+    color: #d4d4e1;
+}
+

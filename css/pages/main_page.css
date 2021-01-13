@@ -14,6 +14,7 @@
         width: 100%;
         height: 100%;
         z-index: 1;
+        transition: opacity 1s;
         background-size: cover;
         background-position: center;
     }
@@ -38,9 +39,11 @@
         border: 1px solid #d4d4e1;
     }
 
-    .item-sectionService:hover {
-        background-color: #2876e2;
+    @keyframes myanimation {
+        from {background-color: #fff;}
+        to {background-color: #2876e2;}
     }
+    .item-sectionService:hover {animation: myanimation 0.5s forwards;}
 
     .sectionChooseUs {
         background-color: #f0f4f8;
@@ -91,11 +94,6 @@
         justify-content: center;
     }
 
-    .emptyCell {
-        flex-basis: 50px;
-        flex-grow: 1;
-    }
-
     @media only screen and (max-width: 1200px) {
         .sectionTeam-itemBlok {
             flex-direction: column;
@@ -111,9 +109,6 @@
             flex-basis: auto;
             margin: 0px;
             width: 80%;
-        }
-        .emptyCell {
-            display: none;
         }
     }
 

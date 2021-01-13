@@ -9,6 +9,9 @@
     border-radius: 10px;
     border: 1px solid #d4d4e1;
 }
-.item-services:hover {
-    background-color: #2876e2;
+
+@keyframes itemServices-animation {
+    from {background-color: #fff;}
+    to {background-color: #2876e2;}
 }
+.item-services:hover {animation: itemServices-animation 0.5s forwards;}
