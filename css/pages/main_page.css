@@ -79,6 +79,7 @@
         margin-left: 15px;
         margin-right: 15px;
         margin-bottom: 30px;
+        position: relative;
     }
 
     .item-sectionTeam img {
@@ -88,6 +89,52 @@
         padding: 0;
         padding-bottom: 15px;
     }
+
+    .item-sectionTeam:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: none;
+    }
+
+    .socialNetworkContainer {
+        visibility: hidden;
+        position: absolute; 
+        left: 80px; 
+        top: 250px;
+    }
+
+    .socialNetworkContainer a {
+        padding: 15px;
+        display: inline-block;
+    }
+
+    .item-sectionTeam:hover .socialNetworkContainer{
+        visibility: visible;
+    }
+
+    .socialNetworkContainer a:nth-child(1) {
+        background: url('../../images/sprites-social.png') -13px -11px;
+    }
+
+    .socialNetworkContainer a:nth-child(2) {
+        background: url('../../images/sprites-social.png') -212px -11px;
+    }
+
+    .socialNetworkContainer a:nth-child(3) {
+        background: url('../../images/sprites-social.png') -62px -64px;
+    }
+
+    .socialNetworkContainer a:nth-child(1):hover {
+        background: url('../../images/sprites-social.png') -162px -11px;
+    }
+
+    .socialNetworkContainer a:nth-child(2):hover {
+        background: url('../../images/sprites-social.png') -112px -11px;
+    }
+
+    .socialNetworkContainer a:nth-child(3):hover {
+        background: url('../../images/sprites-social.png') -112px -64px;
+    }
+
 
     .item-subBlok {
         display: flex;
