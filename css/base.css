@@ -26,41 +26,42 @@
 h1 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 1.33;
+
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    font-weight: bold;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    line-height: 1.33;
 }
 
 h3 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    font-weight: bold;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    line-height: 1.33;
 }
 
 h4 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    font-weight: bold;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    line-height: 1.33;
 }
 
 h5 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    font-weight: bold;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    line-height: 1.33;
 }
 
 a {
@@ -82,6 +83,11 @@ p, li{
     font-size: 1rem;
     line-height: 1.625;
     font-weight: 400;
+}
+
+p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 html body {
@@ -132,7 +138,6 @@ html body {
 }
 
 .titleContainer {
-    margin-bottom: 70px;
     padding-top: 70px;
     text-align: center;
 }
@@ -146,6 +151,35 @@ html body {
 .centerButtonContainer {
     width: 100%;
     text-align: center;
+}
+
+.socialNetworkContainer a {
+    padding: 15px;
+    display: inline-block;
+}
+
+.socialNetworkContainer a:nth-child(1) {
+    background: url('../images/sprites-social.png') -13px -11px;
+}
+
+.socialNetworkContainer a:nth-child(2) {
+    background: url('../images/sprites-social.png') -212px -11px;
+}
+
+.socialNetworkContainer a:nth-child(3) {
+    background: url('../images/sprites-social.png') -62px -64px;
+}
+
+.socialNetworkContainer a:nth-child(1):hover {
+    background: url('../images/sprites-social.png') -162px -11px;
+}
+
+.socialNetworkContainer a:nth-child(2):hover {
+    background: url('../images/sprites-social.png') -112px -11px;
+}
+
+.socialNetworkContainer a:nth-child(3):hover {
+    background: url('../images/sprites-social.png') -112px -64px;
 }
 
 .footer {

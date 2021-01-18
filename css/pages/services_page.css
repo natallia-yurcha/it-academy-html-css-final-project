@@ -9,9 +9,56 @@
     border-radius: 10px;
     border: 1px solid #d4d4e1;
 }
+.svgContainer-services {
+    position: relative; 
+    width: 100px; 
+    height: 100px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
 
-@keyframes itemServices-animation {
+.svgContainer-services div {
+    position: absolute; 
+    top: 18px; 
+    left: 30px; 
+    font-family: 'Material Icons'; 
+    font-size: 2.5rem; 
+    color: #fff;
+}
+.svgContainer-services circle {
+    fill: #2876e2;
+}
+
+@keyframes animationBColor {
     from {background-color: #fff;}
     to {background-color: #2876e2;}
 }
-.item-services:hover {animation: itemServices-animation 0.5s forwards;}
+@keyframes animationFill {
+    from {fill: #2876e2;}
+    to {fill: #fff;}
+}
+@keyframes animationIcon {
+    from {color: #fff;}
+    to {color: #2876e2;}
+}
+
+.item-services:hover {
+    animation: animationBColor 0.5s forwards;
+    border: none;
+}
+
+.item-services:hover circle {
+    animation: animationFill 0.5s forwards;
+}
+
+.item-services:hover .svgContainer-services div {
+    animation: animationIcon 0.5s forwards;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .item-services {
+        flex-basis: auto;
+        margin-bottom: 20px;
+    }
+}

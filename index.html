@@ -22,9 +22,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <!--logo-->
-            <a class="navbar-brand" href="index.html" title="Home">
+            <a class="navbar-brand" href="index.html" title="home">
                 <img class="logo" src="images/logo-ico.png" width="36" height="35" alt="Website of IT company"
-                    title="logo">PathSoft
+                    title="home">PathSoft
             </a>
             <!--navbar-toggler-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarContent"
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="index.html" title="Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.html">About&nbsp;us</a>
+                        <a class="nav-link" href="aboutUs.html" title="About us">About&nbsp;us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html" title="Services">Services</a>
@@ -56,7 +56,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="blog.html" title="Blog">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Gallery</a>
@@ -90,33 +90,39 @@
         <div class="itemBlok">
 
             <a href="corporateSolutions.html" title="Corporate Solutions" class="item-sectionService">
-                <div>
+                <div class="svgContainer-SectionService">
+                    <svg xmlns="http//www.w3.org/2000/svg" height="100" width="100"><circle cx="50" cy="50" r="40"/></svg>
+                    <div>settings</div>
+                </div>
                     <h4>Corporate Solution</h4>
                     <p>Contrary to popular belief, Lorem ipsum is not simply random text. It has
                         roots in a piece of
                         classical
                         Latin literature from 45 BC, making it over 2000 years old.</p>
-                </div>
             </a>
 
             <a href="corporateSolutions.html" title="Corporate Solutions" class="item-sectionService">
-                <div>
+                <div class="svgContainer-SectionService">
+                    <svg xmlns="http//www.w3.org/2000/svg" height="100" width="100"><circle cx="50" cy="50" r="40"/></svg>
+                    <div>phone_in_talk</div>
+                </div>
                     <h4>Call Center Solutions</h4>
                     <p>There are many variations of passages of Lorem Ipsum available, but the
                         majority have suffered
                         alteration
                         in some form, by injected humour, or randomised words.</p>
-                </div>
             </a>
 
             <a href="corporateSolutions.html" title="Corporate Solutions" class="item-sectionService">
-                <div>
+                <div class="svgContainer-SectionService">
+                    <svg xmlns="http//www.w3.org/2000/svg" height="100" width="100"><circle cx="50" cy="50" r="40"/></svg>
+                    <div>cloud_download</div>
+                </div>
                     <h4>Cloud Development</h4>
                     <p>Contrary to popular belief, Lorem ipsum is not simply random text. It has
                         roots in a piece of
                         classical
                         Latin literature from 45 BC, making it over 2000 years old.</p>
-                </div>
             </a>
         </div>
 
@@ -218,10 +224,10 @@
                     <img src="images/team-img-1.jpg" alt="team SoftPath" title="team SoftPath">
                     <h4>Mary Lee</h4>
                     <p>Software Developer</p>
-                    <div class="socialNetworkContainer">
-                        <a href=""></a> 
-                        <a href=""></a> 
-                        <a href=""></a> 
+                    <div class="hiddenSocialNetworkContainer">
+                        <a href="" title="Instagram"></a> 
+                        <a href="" title="Facebook"></a> 
+                        <a href="" title="Twitter"></a> 
                     </div>
                 </div>
 
@@ -229,10 +235,10 @@
                     <img src="images/team-img-2.jpg" alt="team SoftPath" title="team SoftPath">
                     <h4>Ryan Wilson</h4>
                     <p>CEO</p>
-                    <div class="socialNetworkContainer">
-                        <a href=""></a> 
-                        <a href=""></a> 
-                        <a href=""></a> 
+                    <div class="hiddenSocialNetworkContainer">
+                        <a href="" title="Instagram"></a> 
+                    <a href="" title="Facebook"></a> 
+                    <a href="" title="Twitter"></a> 
                     </div>
                 </div>
             </div>
@@ -242,10 +248,10 @@
                     <img src="images/team-img-3.jpg" alt="team SoftPath" title="team SoftPath">
                     <h4>Sam Robinson</h4>
                     <p>Senior Developer</p>
-                    <div class="socialNetworkContainer">
-                        <a href=""></a> 
-                        <a href=""></a> 
-                        <a href=""></a> 
+                    <div class="hiddenSocialNetworkContainer">
+                        <a href="" title="Instagram"></a> 
+                        <a href="" title="Facebook"></a> 
+                        <a href="" title="Twitter"></a> 
                     </div>
                 </div>
 
@@ -253,10 +259,10 @@
                     <img src="images/team-img-4.jpg">
                     <h4>Jill Peterson</h4>
                     <p>Senior Developer</p>
-                    <div class="socialNetworkContainer">
-                        <a href=""></a> 
-                        <a href=""></a> 
-                        <a href=""></a> 
+                    <div class="hiddenSocialNetworkContainer">
+                        <a href="" title="Instagram"></a> 
+                    <a href="" title="Facebook"></a> 
+                    <a href="" title="Twitter"></a> 
                     </div>
                 </div>
             </div>
@@ -269,13 +275,18 @@
             <div class="emptyCell"></div>
             <div>
                 <h4>
-                    <a href="index.html" title="Home">
+                    <a href="index.html" title="home">
                         <img class="logo" src="images/logo-ico.png" width="36" height="35" alt="Website of IT company"
-                            title="logo">PathSoft
+                            title="home">PathSoft
                     </a>
                 </h4>
                 <p>Our company has been developing high-quality and reliable software for
                 corporate needs since 2008. We are renowned professionals of software development.</p>
+                <div class="socialNetworkContainer">
+                    <a href="" title="Instagram"></a> 
+                    <a href="" title="Facebook"></a> 
+                    <a href="" title="Twitter"></a> 
+                </div>
             </div>
             <div class="emptyCell"></div>
             <div>
@@ -283,10 +294,10 @@
                     Menu
                 </h4>
                 <ul>
-                    <li><a href="aboutUs.html">About&nbsp;Us</a></li>
+                    <li><a href="aboutUs.html" title="About us">About&nbsp;Us</a></li>
                     <li><a href="services.html" title="Services">Services</a></li>
                     <li><a href="">Pricing</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="blog.html" title="Blog">Blog</a></li>
                     <li><a href="contactUs.html" title="Contact Us" >Contact&nbsp;Us</a></li>
                 </ul>
             </div>
