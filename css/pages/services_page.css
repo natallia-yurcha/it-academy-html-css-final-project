@@ -9,37 +9,53 @@
     border-radius: 10px;
     border: 1px solid #d4d4e1;
 }
+
 .svgContainer-services {
-    position: relative; 
-    width: 100px; 
-    height: 100px; 
-    margin-left: auto; 
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
     margin-right: auto;
 }
 
 .svgContainer-services div {
-    position: absolute; 
-    top: 18px; 
-    left: 30px; 
-    font-family: 'Material Icons'; 
-    font-size: 2.5rem; 
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    font-family: 'Material Icons';
+    font-size: 2.5rem;
     color: #fff;
 }
+
 .svgContainer-services circle {
     fill: #2876e2;
 }
 
 @keyframes animationBColor {
-    from {background-color: #fff;}
-    to {background-color: #2876e2;}
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: #2876e2;
+    }
 }
+
 @keyframes animationFill {
-    from {fill: #2876e2;}
-    to {fill: #fff;}
+    from {
+        fill: #2876e2;
+    }
+    to {
+        fill: #fff;
+    }
 }
+
 @keyframes animationIcon {
-    from {color: #fff;}
-    to {color: #2876e2;}
+    from {
+        color: #fff;
+    }
+    to {
+        color: #2876e2;
+    }
 }
 
 .item-services:hover {
@@ -54,7 +70,6 @@
 .item-services:hover .svgContainer-services div {
     animation: animationIcon 0.5s forwards;
 }
-
 
 @media only screen and (max-width: 768px) {
     .item-services {

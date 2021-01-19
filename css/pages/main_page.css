@@ -1,6 +1,8 @@
     .navbar {
-        box-shadow:  0 0 15px rgba(0, 0, 0, 0.2);;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        ;
     }
+
     #carousels {
         position: relative;
         width: 100%;
@@ -43,36 +45,51 @@
     }
 
     .svgContainer-SectionService {
-        position: relative; 
-        width: 100px; 
-        height: 100px; 
-        margin-left: auto; 
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
         margin-right: auto;
     }
 
     .svgContainer-SectionService div {
-        position: absolute; 
-        top: 18px; 
-        left: 30px; 
-        font-family: 'Material Icons'; 
-        font-size: 2.5rem; 
+        position: absolute;
+        top: 18px;
+        left: 30px;
+        font-family: 'Material Icons';
+        font-size: 2.5rem;
         color: #fff;
     }
+
     .svgContainer-SectionService circle {
         fill: #2876e2;
     }
 
     @keyframes animationBColor {
-        from {background-color: #fff;}
-        to {background-color: #2876e2;}
+        from {
+            background-color: #fff;
+        }
+        to {
+            background-color: #2876e2;
+        }
     }
+
     @keyframes animationFill {
-        from {fill: #2876e2;}
-        to {fill: #fff;}
+        from {
+            fill: #2876e2;
+        }
+        to {
+            fill: #fff;
+        }
     }
+
     @keyframes animationIcon {
-        from {color: #fff;}
-        to {color: #2876e2;}
+        from {
+            color: #fff;
+        }
+        to {
+            color: #2876e2;
+        }
     }
 
     .item-sectionService:hover {
@@ -84,11 +101,9 @@
         animation: animationFill 0.5s forwards;
     }
 
-
     .item-sectionService:hover .svgContainer-SectionService div {
         animation: animationIcon 0.5s forwards;
     }
-
 
     .sectionChooseUs {
         background-color: #f0f4f8;
@@ -133,10 +148,12 @@
         height: auto;
         padding: 0;
     }
-    .item-sectionTeam h4{
+
+    .item-sectionTeam h4 {
         margin-bottom: 0;
         margin-top: 0.5rem;
     }
+
     .item-sectionTeam p {
         margin: 0;
     }
@@ -148,8 +165,8 @@
 
     .hiddenSocialNetworkContainer {
         visibility: hidden;
-        position: absolute; 
-        left: 80px; 
+        position: absolute;
+        left: 80px;
         top: 250px;
     }
 
@@ -157,42 +174,39 @@
         padding: 15px;
         display: inline-block;
     }
-    
-    
+
     .hiddenSocialNetworkContainer a {
         padding: 15px;
         display: inline-block;
     }
 
-    .item-sectionTeam:hover .hiddenSocialNetworkContainer{
+    .item-sectionTeam:hover .hiddenSocialNetworkContainer {
         visibility: visible;
     }
 
-    
     .hiddenSocialNetworkContainer a:nth-child(1) {
         background: url('../../images/sprites-social.png') -13px -11px;
     }
-    
+
     .hiddenSocialNetworkContainer a:nth-child(2) {
         background: url('../../images/sprites-social.png') -212px -11px;
     }
-    
+
     .hiddenSocialNetworkContainer a:nth-child(3) {
         background: url('../../images/sprites-social.png') -62px -64px;
     }
-    
+
     .hiddenSocialNetworkContainer a:nth-child(1):hover {
         background: url('../../images/sprites-social.png') -162px -11px;
     }
-    
+
     .hiddenSocialNetworkContainer a:nth-child(2):hover {
         background: url('../../images/sprites-social.png') -112px -11px;
     }
-    
+
     .hiddenSocialNetworkContainer a:nth-child(3):hover {
         background: url('../../images/sprites-social.png') -112px -64px;
     }
-    
 
     .item-subBlok {
         display: flex;
