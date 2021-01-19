@@ -1,31 +1,17 @@
-h1, h2, h3, h4, h5 {
-    font-weight: 700;
-}
 
-h1, h2 {
-    font-size: 2rem;
-}
-h3 {
-    font-size: 1.75rem;
-}
-h4 {
-    font-size: 1.5rem;
-}
-h5 {
-    font-size: 1.25rem;
-}
 .articleContainer {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+    overflow: hidden;
     text-align: justify;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .articleContainer img{
     display: block;
     height: auto;
-    width: 100%;
+    max-width: 100%;
     border: 1px solid #d4d4e1;
     border-radius: 10px;
 }
@@ -42,7 +28,7 @@ h5 {
 
 .articleContainer ol li {
     margin-bottom: 15px;
-    margin-left: 15px;
+    margin-left: 20px;
     list-style-type: decimal;
     color: #2c7ae7;
 }
@@ -58,6 +44,10 @@ blockquote {
     color: #63636b;
     border-left: 3px solid #2c7ae7;
     margin: 0 0 1rem;
+}
+
+.tableContainer {
+    overflow: scroll;
 }
 
 table {
@@ -89,3 +79,8 @@ table tfoot tr td{
 table tr:nth-child(even) {
     background-color: #f0f4f8;
 }
+
+
+
+
+
