@@ -56,17 +56,17 @@
 }
 
 .searchBlogContainer {
-    width: 240px;
+    width: 260px;
     margin-top: 60px;
 }
 
-.inpt {
+#inptSearch {
     width: 100%;
 }
 
+
 .signUpBlogContainer .btn {
-    padding-left: 49px;
-    padding-right: 49px;
+    padding: 10px 40px;
 }
 
 .signUpBlogContainer .centerButtonContainer {
@@ -106,6 +106,48 @@
     text-align: right;
 }
 
-.searchInputBlogContainer, .signUpBlogContainer, .tagsBlogContainer, .categoriesBlogContainer {
+#inptSearch, .signUpBlogContainer, .tagsBlogContainer, .categoriesBlogContainer {
     margin-bottom: 20px;
+}
+
+#notFoundContainer {
+    display: none;
+    width: 800px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .blogPageContainer {
+        display: block;
+    }
+    .articleBlogContainer {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .articleBlogContainer div {
+        margin-left: 0;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+    }
+    
+    .articleBlogContainer img {
+        width: 80%;
+    }
+
+    .searchBlogContainer {
+        width: 60%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .signUpBlogContainer input {
+        width: 90%;
+    }
 }

@@ -30,21 +30,23 @@
     <!--/breadcrumb-->
 
     <div class="blogPageContainer">
-        <div>
+        <div id="allArticles">
             <div class="titleContainer">
                 <div>MOST INTERESTING ARTICLES</div>
                 <h1>Blog</h1>
             </div>
             <div class="articleBlogContainer">
-                <a href="BenefitsOfASyncOrAwaitInProgramming.html" title="Benefits of Async/Await in Programming"><img
-                        src="images/news-img-2.jpg" alt="article image"
-                        title="Benefits of Async/Await in Programming"></a>
+                <a href="BenefitsOfASyncOrAwaitInProgramming.html" title="Benefits of Async/Await in Programming">
+                    <img src="images/news-img-2.jpg" alt="article image" title="Benefits of Async/Await in Programming">
+                </a>
                 <div>
-                    <h4><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Benefits of Async/Await in
+                    <h4><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Benefits of Async/Await
+                            in
                             Programming</a></h4>
                     <span>Jan 23, 2020 &ensp;</span>
                     <span>by <a href="#!" title="John Doe">John Doe</a></span>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
+                        and
                         demoralized by the charms of pleasure of the moment...</p>
                     <span><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Read more
                             &rarr;</a></span>
@@ -60,7 +62,8 @@
                     </h4>
                     <span>Jan 23, 2020 &ensp;</span>
                     <span>by <a href="#!" title="John Doe">John Doe</a></span>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
+                        and
                         demoralized by the charms of pleasure of the moment...</p>
                     <span><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Read more
                             &rarr;</a></span>
@@ -75,7 +78,8 @@
                             Language</a></h4>
                     <span>Jan 23, 2020 &ensp;</span>
                     <span>by <a href="#!" title="John Doe">John Doe</a></span>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
+                        and
                         demoralized by the charms of pleasure of the moment...</p>
                     <span><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Read more
                             &rarr;</a></span>
@@ -87,11 +91,13 @@
                         src="images/news-img-2.jpg" alt="article image"
                         title="Benefits of Async/Await in Programming"></a>
                 <div>
-                    <h4><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Benefits of Async/Await in
+                    <h4><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Benefits of Async/Await
+                            in
                             Programming</a></h4>
                     <span>Jan 23, 2020 &ensp;</span>
                     <span>by <a href="#!" title="John Doe">John Doe</a></span>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
+                        and
                         demoralized by the charms of pleasure of the moment...</p>
                     <span><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Read more
                             &rarr;</a></span>
@@ -107,7 +113,8 @@
                     </h4>
                     <span>Jan 23, 2020 &ensp;</span>
                     <span>by <a href="#!" title="John Doe">John Doe</a></span>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
+                        and
                         demoralized by the charms of pleasure of the moment...</p>
                     <span><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Read more
                             &rarr;</a></span>
@@ -122,25 +129,30 @@
                             Language</a></h4>
                     <span>Jan 23, 2020 &ensp;</span>
                     <span>by <a href="#!" title="John Doe">John Doe</a></span>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
+                        and
                         demoralized by the charms of pleasure of the moment...</p>
                     <span><a href="BenefitsOfASyncOrAwaitInProgramming.html" title="read more">Read more
                             &rarr;</a></span>
                 </div>
             </div>
 
-            <div class="centerButtonContainer"><a class="btn" href="#!">Load More</a></div>
+            <div id="notFoundContainer">
+                <p>Sorry, no articles found...</p>
+            </div>
+
+            <div class="centerButtonContainer" id="btnLoadMore"><a class="btn" href="#!">Load More</a></div>
         </div>
 
         <div class="searchBlogContainer">
-            <div class="searchInputBlogContainer">
-                <input class="inpt" type="text" name="search" placeholder="Search">
-            </div>
+            <input id="inptSearch" class="inpt" onkeyup="searchOnPage();" type="search" name="search"
+                placeholder="Search...">
 
             <div class="signUpBlogContainer">
                 <h4>Sign Up to Blog</h4>
                 <p>Subscribe to our blog to get the latest updates and offers</p>
                 <input class="inpt" type="text" name="email" placeholder="Your Email">
+                </form>
                 <div class="centerButtonContainer"><a class="btn" href="#!">Send Message</a></div>
             </div>
 
@@ -198,6 +210,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 
 </body>
 

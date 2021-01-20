@@ -3,6 +3,7 @@
         ;
     }
 
+
     #carousels {
         position: relative;
         width: 100%;
@@ -158,10 +159,21 @@
         margin: 0;
     }
 
+
+    @keyframes animationSectionTeam {
+        from {
+            box-shadow: 0 0 5px #fff;
+        }
+        to {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
     .item-sectionTeam:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        animation: animationSectionTeam 0.5s forwards;
         border: none;
     }
+
 
     .hiddenSocialNetworkContainer {
         visibility: hidden;

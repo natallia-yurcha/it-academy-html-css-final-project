@@ -1,11 +1,26 @@
 
-var carousels = document.querySelectorAll('#carousels .carousel'); /*получаем все слайды из контейнера*/
-var currentCarousel = 0; /*создаем переменную для текущего слайда*/
-var carouselInterval = setInterval(nextCarousel, 4000); /*Интервал между картинками */
+function searchOnPage() {
 
-function nextCarousel() {
-    carousels[currentCarousel].className = 'carousel'; /*меняем класс для текущего слайда, чтобы спрятать его*/
-    currentCarousel = (currentCarousel + 1) % carousels.length; /*добавляем класс к текущему слайду. Мы используем оператор % на случай, если это был последний слайд, чтобы вернуться к первому*/
-    carousels[currentCarousel].className = 'carousel demonstration'; /*После получения индекса слайда мы меняем класс и показываем новый*/
+    var input, filter, div, divElements, title, text, notFoundContainer, button;
+    var isAnyArticleVisible = false;
+    input = document.getElementById('inptSearch');
+    filter = input.value.toUpperCase();
+    div = document.getElementById('allArticles');
+    divElements = div.getElementsByClassName('articleBlogContainer');
+    notFoundContainer = document.getElementById('notFoundContainer');
+    button = document.getElementById('btnLoadMore');
+    for (i = 0; i < divElements.length; i++) {
+        title = divElements[i].getElementsByTagName("a")[1];
+        text = divElements[i].getElementsByTagName("p")[0];
+        if (title.innerHTML.toUpperCase().indexOf(filter) > -1 || text.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            divElements[i].style.display = "flex";
+            isAnyArticleVisible = true;
+        } else {
+            divElements[i].style.display = "none";
+        }
+    }
+
+    notFoundContainer.style.display = isAnyArticleVisible ? "none" : "block";
+    button.style.display = isAnyArticleVisible ? "block" : "none";
 }
 

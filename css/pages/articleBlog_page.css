@@ -46,7 +46,7 @@ blockquote {
 }
 
 .tableContainer {
-    overflow: scroll;
+    overflow: auto;
 }
 
 table {
