@@ -63,6 +63,10 @@
     border: none;
 }
 
+.item-services:hover p {
+    color: #fff;
+}
+
 .item-services:hover circle {
     animation: animationFill 0.5s forwards;
 }

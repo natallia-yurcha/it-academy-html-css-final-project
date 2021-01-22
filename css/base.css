@@ -86,6 +86,7 @@ p, li, span {
 p {
     margin-bottom: 1rem;
     margin-top: 1rem;
+    color: #303036;
 }
 
 html body {
@@ -185,28 +186,64 @@ html body {
     color: #fff;
     height: 400px;
     padding-top: 30px;
+    justify-content: center;
+}
+
+.footer div li {
+    line-height: 2;
+}
+
+.footer div li a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer div {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .footer h4 {
     text-align: left;
 }
 
-.emptyCell {
-    flex-basis: 50px;
-    flex-grow: 1;
-}
-
-.footer div:nth-child(2), .footer div:nth-child(7) {
+.footer div:nth-of-type(1), .footer div:nth-of-type(4) {
     flex-basis: 250px;
     text-align: justify;
 }
 
-.footer div:nth-child(4), .footer div:nth-child(5) {
+.footer div:nth-of-type(2) {
+    flex-basis: 80px;
+    text-align: left;
+}
+
+.footer div:nth-of-type(3) {
     flex-basis: 150px;
     text-align: left;
 }
 
+@media only screen and (max-width: 1200px) {
+    .footer div:nth-of-type(3) {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 30px;
+        height: auto;
+    }
+    .footer div:nth-of-type(1), .footer div:nth-of-type(4) {
+        flex-basis: auto;
+        margin-top: 15px;
+    }
+    .footer div:nth-of-type(2){
+        display: none;
+    }
     h1 {
         font-size: 2rem;
     }
@@ -226,19 +263,5 @@ html body {
         flex-direction: column;
         align-items: center;
         padding-bottom: 0;
-    }
-    .footer {
-        flex-direction: column;
-        padding: 30px;
-    }
-    .emptyCell {
-        display: none;
-    }
-    .footer div:nth-child(2), .footer div:nth-child(7) {
-        flex-basis: auto;
-        margin-bottom: 30px;
-    }
-    .footer div:nth-child(4), .footer div:nth-child(5) {
-        display: none;
     }
 }

@@ -67,6 +67,9 @@
         padding: 0;
         width: 80%;
     }
+    .item-form h3 {
+        margin-top: 2rem;
+    }
     .item-contacts {
         margin: 0;
         padding: 30px;
