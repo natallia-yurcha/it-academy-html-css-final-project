@@ -1,10 +1,36 @@
 
-var carousels = document.querySelectorAll('#carousels .carousel'); /*получаем все слайды из контейнера*/
-var currentCarousel = 0; /*создаем переменную для текущего слайда*/
-var carouselInterval = setInterval(nextCarousel, 4000); /*Интервал между картинками */
+var carouselItems = document.querySelectorAll('#indexCarousel .carouselItem');
+var currentCarouselItem = 0; 
+var carouselInterval = setInterval(nextCarousel, 5000); 
+var dots = document.querySelectorAll('.dotItem');
 
 function nextCarousel() {
-    carousels[currentCarousel].className = 'carousel'; /*меняем класс для текущего слайда, чтобы спрятать его*/
-    currentCarousel = (currentCarousel + 1) % carousels.length; /*добавляем класс к текущему слайду. Мы используем оператор % на случай, если это был последний слайд, чтобы вернуться к первому*/
-    carousels[currentCarousel].className = 'carousel demonstration'; /*После получения индекса слайда мы меняем класс и показываем новый*/
+    carouselItems[currentCarouselItem].className = 'carouselItem'; 
+    dots[currentCarouselItem].className = 'dotItem';
+    currentCarouselItem = (currentCarouselItem + 1) % carouselItems.length; 
+    carouselItems[currentCarouselItem].className = 'carouselItem imageDemonstration';
+    dots[currentCarouselItem].className = 'dotItem dotDemonstration';
+}
+
+
+
+function navigateToCarouselItemWithIndex(index) {
+    carouselItems[currentCarouselItem].className = 'carouselItem';
+    dots[currentCarouselItem].className = 'dotItem';
+    currentCarouselItem = index;
+    carouselItems[currentCarouselItem].className = 'carouselItem imageDemonstration';
+    dots[currentCarouselItem].className = 'dotItem dotDemonstration';
+}
+
+function makeOnClickHandler(index) {
+    return function () {
+        navigateToCarouselItemWithIndex(index);
+    }
+}
+
+window.onload = function () {
+    var buttons = document.getElementsByClassName("dotsCarouselContainer")[0].getElementsByTagName("div");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].onclick = makeOnClickHandler(i);
+    }
 }
