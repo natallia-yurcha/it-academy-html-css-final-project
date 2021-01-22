@@ -18,6 +18,14 @@
     background-color: #fff;
 }
 
+.navbar {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav {
+    background-color: white;
+}
+
 .collapse {
     background-color: #fff;
 }
