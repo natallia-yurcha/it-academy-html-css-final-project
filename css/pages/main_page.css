@@ -134,6 +134,10 @@
      animation: animationIcon 0.5s forwards;
  }
 
+ .item-sectionService:hover p {
+     color: white;
+ }
+
  .sectionChooseUs {
      background-color: #f0f4f8;
  }
